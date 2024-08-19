@@ -1,0 +1,61 @@
+/* COLOR */
+.blue_600 {
+  color: var(--blue-600);
+}
+.white {
+  color: var(--white);
+}
+/* TEXT */
+.text_600 {
+  font-weight: 600;
+}
+.text_center {
+  text-align: center;
+}
+/* LINE_HEIGHT */
+.lh_26 {
+  line-height: 26px;
+}
+.lh_35 {
+  line-height: 35px;
+}
+/* FRONT_SIZE */
+.fs_15 {
+  font-size: 15px;
+}
+.fs_25 {
+  font-size: 25px;
+}
+.fs_20 {
+  font-size: 20px;
+}
+.fs_30 {
+  font-size: 30px;
+}
+
+.fs_40 {
+  font-size: 40px;
+}
+/* MARGIN */
+.mtb_1 {
+  margin: 10px 0;
+}
+.mtb_2 {
+  margin: 20px 0;
+}
+/* FONT_WEIGHT */
+.fw_5 {
+  font-weight: 500;
+}
+.fw_6 {
+  font-weight: 600;
+}
+.fw_7 {
+  font-weight: 700;
+}
+
+.line_under {
+  text-decoration: underline;
+}
+
+

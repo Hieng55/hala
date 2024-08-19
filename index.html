@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/class.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header-container">
+          <div class="header_box">
+            <img class="header_logo" src="./images/logo.png" alt="" />
+          </div>
+
+          <div class="header_group">
+            <div class="language">
+              <span>VI</span>
+              <span>/</span>
+              <span>EN</span>
+            </div>
+            <div class="header_contact">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div class="header_contact_content">
+                <p>Gọi ngay cho chúng tôi</p>
+                <p>056-45668-4667</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <div class="main_banner">
+          <div class="main_banner_content">
+            <div class="main_banner_text">
+              <h3>GIẢI PHÁP HÀNG ĐẦU CHO TIỆM NAILS</h3>
+              <h1>ALL IN ONE MERCHANT</h1>
+              <h4>merchant account, POS, check-in, marketing services</h4>
+              <div class="main_banner_contact">
+                <a href="tel:0364003638">Gọi cho chúng tôi</a>
+                <button onclick="handleOpenBanner()" type="button" class="play">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="main_pay_computer"><img src="./images/pay_computer.png" alt="" /></div>
+            <div style="display: none" class="main_banner_contact-two">
+              <a href="tel:0364003638">Gọi cho chúng tôi</a>
+              <button onclick="handleOpenBanner()" type="button" class="play">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="main_aboutUs_container">
+          <div class="main_about_group">
+            <div class="main_about_images">
+              <div class="main_about_banner">
+                <img src="./images/about.png" alt="" />
+                <div class="main_box_images">
+                  <div class="box_image">
+                    <img src="./images/banner_about.png" alt="" />
+                  </div>
+                  <div class="box_image">
+                    <img src="./images/about_1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="main_about_content">
+                <h3 class="blue_600">ABOUT US</h3>
+                <h2 class="blue_600">ALL IN ONE MERCHANT</h2>
+                <p class="lh_26 fs_15">
+                  Là công ty người Việt tại Mỹ với nhiều năm kinh nghiệm dẫn đầu trong lĩnh vực merchant account, POS và marketing cho các tiệm nails
+                  tại 50 tiểu bang trên khắp Hoa Kỳ. Công ty <span class="blue_600 text_600">All in One Merchant</span> với một diện mạo mới với mục
+                  tiêu sẽ tiếp tục giúp hàng chục ngàn chủ tiệm nails trên khắp nước Mỹ, Canada có hoạt động kinh doanh hiện đại và nhanh chóng hơn,
+                  kiếm thêm khách hàng mới và thành công trong việc kinh doanh của mình.
+                </p>
+                <br />
+                <p class="lh_26 fs_15">
+                  Với kinh nghiệm trợ giúp và phục vụ hàng ngàn khách hàng tại nhiều tiểu bang với nhiều mô hình kinh doanh và quy mô khác nhau,
+                  <span class="blue_600 text_600">All in One Merchant</span> tự tin sẽ luôn có các giải pháp phù hợp đáp ứng đầy đủ các yêu cầu của
+                  chủ tiệm với mức giá hợp lý nhất thị trường.
+                </p>
+                <br />
+
+                <button class="main_btn" type="button">Dịch vụ của chúng tôi</button>
+              </div>
+              <div class="main_about_right">
+                <img src="./images/dot.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main_services">
+          <div class="main_service_info">
+            <div class="main_service_boxes">
+              <div class="main_service_box">
+                <h2>DỊCH VỤ MERCHANT ACCOUNT</h2>
+              </div>
+              <div class="main_service_box">
+                <h2><span>10.000</span> khách hàng trên <span>50</span> tiểu bang</h2>
+              </div>
+            </div>
+          </div>
+          <div class="main_list_service">
+            <ul>
+              <li><i class="fa-solid fa-check"></i> CAM KẾT PHÍ CÀ THẺ TỐT NHẤT</li>
+              <li><i class="fa-solid fa-check"></i> KHÔNG PHÍ ẨN, KHÔNG PHÍ PHỤ</li>
+              <li><i class="fa-solid fa-check"></i> KHÔNG RÀNG BUỘC HỢP ĐỒNG</li>
+              <li><i class="fa-solid fa-check"></i> HỖ TRỢ KỸ THUẬT 24/7</li>
+              <li><a href="tel:098847873458" class="main_btn">Gọi nghe tư vấn</a></li>
+            </ul>
+            <img src="./images/pay_computer.png" alt="" />
+          </div>
+        </div>
+        <div class="main_feature">
+          <div class="main_feature_group">
+            <img src="./images/logo_2.png" alt="" />
+            <div class="main_feature_content white text_center lh_35">
+              <h2 class="fs_40 mtb_1">ATLED POS</h2>
+              <p>
+                Phần mềm quản lý giúp tính tiền, tính lương, chia turn, bán giftcard, tăng <br />reviews, online booking… <br />
+                All in One system cho tiệm nails
+              </p>
+              <p class="fs_20 fw_7 mtb_2">
+                <span class="line_under">ĐẶC BIỆT:</span> MIỄN PHÍ SỬ DỤNG <span class="fs_30">06 THÁNG</span> FULL TÍNH NĂNG
+              </p>
+              <button class="main_btn">Tìm hiểu thêm</button>
+            </div>
+            <div class="main_pos_computer">
+              <svg width="1979" height="406" viewBox="0 0 1979 406" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 510V46L1979 432.917V510H0Z" fill="white" />
+                <path d="M0 485V21L1979 407.917V485H0Z" fill="white" fill-opacity="0.45" />
+                <path d="M0 464V0L1979 386.917V464H0Z" fill="white" fill-opacity="0.4" />
+              </svg>
+              <img src="./images/pos_computer.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div onclick="handleClickOutsideContent(event)" class="bg_black">
+      <div class="bg_content">
+        <img src="./images/banner_mini.png" alt="" />
+        <button onclick="handleCloseBanner(event)" class="close_banner" type="button"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
