@@ -92,15 +92,15 @@ function translateLanguage(language) {
   }
 }
 
-function getLanguage() {
-  let language = localStorage.getItem("language");
-  console.log(language);
+// function getLanguage() {
+//   let language = localStorage.getItem("language");
+//   console.log(language);
 
-  if (language === "en") {
-    translateLanguage("en")
-  }
-  if (language === "vi") {
-    document.querySelector(".vi").classList.add("active");
-  }
-}
-getLanguage();
+//   if (language === "en") {
+//     translateLanguage("en")
+//   }
+//   if (language === "vi") {
+//     document.querySelector(".vi").classList.add("active");
+//   }
+// }
+// getLanguage();
