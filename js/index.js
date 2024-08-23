@@ -63,3 +63,44 @@ function sendMail() {
 
   window.location.href = mailtoLink;
 }
+
+function translateLanguage(language) {
+  localStorage.setItem("language", language);
+  if (language === "vi") {
+    window.location.href = "https://halamedia.netlify.app";
+  }
+  if (language === "en") {
+    console.log(language);
+
+    getLanguage();
+    window.location.href = `https://translate.google.com/translate?tl=en&u=https://halamedia.netlify.app`;
+  }
+}
+
+function translateLanguage(language) {
+  localStorage.setItem("language", language);
+  if (language === "vi") {
+    document.querySelector(".vi").classList.add("active");
+    document.querySelector(".en").classList.remove("active");
+    window.location.href = "https://halamedia.netlify.app";
+  }
+  if (language === "en") {
+    document.querySelector(".en").classList.add("active");
+    document.querySelector(".en").classList.remove("active");
+    // getLanguage();
+    window.location.href = `https://translate.google.com/translate?tl=en&u=https://halamedia.netlify.app`;
+  }
+}
+
+function getLanguage() {
+  let language = localStorage.getItem("language");
+  console.log(language);
+
+  if (language === "en") {
+    translateLanguage("en")
+  }
+  if (language === "vi") {
+    document.querySelector(".vi").classList.add("active");
+  }
+}
+getLanguage();
